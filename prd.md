@@ -120,3 +120,7 @@ hindi-doc-translator/
 3. **Test**: Follow `smoke-test.md` checklist, run `pytest tests/`
 4. **Lint**: `ruff check .` for PEP 8 compliance
 5. **Deploy**: Verify all smoke tests pass before deployment
+
+
+### 9. Sample Test with this pdf
+C:\VickyJD\CG\Project\SWE-Project Gen AI\repo\hindi-doc-translator\docs\The_Alchemist_mini.pdf

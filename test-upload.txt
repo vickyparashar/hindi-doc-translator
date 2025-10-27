@@ -1,0 +1,5 @@
+Hello, this is a test document for translation.
+
+This is a simple English text that will be translated to Hindi. The application should handle this smoothly.
+
+Testing the Hindi Document Translator application.

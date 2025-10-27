@@ -1,0 +1,9 @@
+[project]
+name = "hindi-text-translator"
+version = "1.0.0"
+description = "Lightweight English to Hindi text translator"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.30.0",
+    "requests>=2.31.0",
+]
