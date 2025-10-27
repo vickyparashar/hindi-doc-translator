@@ -51,7 +51,9 @@ def translate_text(text: str, max_retries: int = 3) -> str:
             
             result = response.json()
             if result and len(result) > 0 and len(result[0]) > 0:
-                translated = result[0][0][0]
+                # Combine all translated segments
+                translated_parts = [segment[0] for segment in result[0] if segment and segment[0]]
+                translated = ''.join(translated_parts)
                 return translated if translated else ""
             
             return ""

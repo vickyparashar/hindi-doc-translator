@@ -1,6 +1,11 @@
 # Smoke Test Checklist - Hindi Text Translator (Simplified)
 
 ## Page Load & UI Elements
+- TBug001 [x]  **FIXED** - Complete paragraph translation now working correctly
+  - **Input**: 'Lila was a curious little girl who loved exploring the woods behind her house. One sunny afternoon, she followed a trail of glittering stones and stumbled upon a tiny door nestled in the roots of an old oak tree. To her surprise, it opened into a cozy room filled with books, glowing mushrooms, and a talking squirrel named Theo. Theo invited her in for tea and tales, and they spent the afternoon swapping stories and laughter. When Lila returned home, she tucked a shiny stone into her pocket—a reminder that magic often hides in the most unexpected places.'
+  - **Expected**: Complete Hindi translation preserving all sentences
+  - **Result**: ✅ Full translation verified: "लीला एक जिज्ञासु छोटी लड़की थी जिसे अपने घर के पीछे के जंगलों में घूमना बहुत पसंद था। एक धूप भरी दोपहर में, वह चमकदार पत्थरों के रास्ते का पीछा कर रही थी और एक पुराने ओक के पेड़ की जड़ों में बसे एक छोटे दरवाजे पर ठोकर खाई। उसे आश्चर्य हुआ, यह किताबों, चमकते मशरूम और थियो नामक एक बात करने वाली गिलहरी से भरे एक आरामदायक कमरे में खुला। थियो ने उसे चाय और कहानियों के लिए आमंत्रित किया, और उन्होंने दोपहर का समय कहानियों और हंसी-मजाक में बिताया। जब लीला घर लौटी, तो उसने अपनी जेब में एक चमकदार पत्थर रख लिया - यह याद दिलाती है कि जादू अक्सर सबसे अप्रत्याशित स्थानों में छिपा होता है।"
+  - **Fix Applied**: Modified `translator.py` to combine all translated segments from API response instead of just taking the first segment
 
 - [x] Application starts successfully with `uv run streamlit run app.py`
 - [x] Page loads at `http://localhost:8501` without errors
@@ -69,7 +74,6 @@
 - [x] All buttons have readable labels
 - [x] Color contrast is sufficient for text
 - [x] Tab navigation works for all interactive elements
-
 ---
 
 ## Test Execution Notes
